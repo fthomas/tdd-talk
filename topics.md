@@ -11,4 +11,6 @@
 
 
 Resources:
-* http://tomasp.net/blog/type-first-development.aspx/
+
+1. http://tomasp.net/blog/type-first-development.aspx/
+1. http://blog.ploeh.dk/2015/08/10/type-driven-development/
