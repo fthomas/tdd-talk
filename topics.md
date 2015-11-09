@@ -1,4 +1,4 @@
-* What are types?#
+* What are types?
   * They classify values.
   * What kind of types are typically used in Java? Most prominently product types, less so sum types.
 * Introduction to Idris
@@ -8,7 +8,7 @@
   * Why you shouldn't use `Int`, `String`, or `Boolean`
   * More precise types help you with the implementation
 * "make illegal states unrepresentable"
-
+* Type first development
 
 Resources:
 
