@@ -50,7 +50,7 @@
 
           Java
           <pre><code>
-    static <T> Optional<T> lastOption(List<T> list) {
+    static &lt;T> Optional&lt;T> lastOption(List&lt;T> list) {
       if (list.isEmpty) return Optional.empty();
       else return Optional.of(list.get(list.size - 1))
     }
