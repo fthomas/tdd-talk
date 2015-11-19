@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>TDD - Type Driven Development</title>
 
 		<meta name="description" content="TDD - Type Driven Development">
 		<meta name="author" content="Frank Thomas">
@@ -41,10 +41,28 @@
 			<div class="slides">
 			
         <section>
-          <h1>TDD</h1>
+          <h1>TDD - Type Driven Development</h1>
           <p>Frank Thomas</p>
         </section>
-			
+        
+        <section>
+          <h3></h3>
+
+          Java:
+          <pre><code>
+    static <T> Optional<T> lastOption(List<T> list) {
+      if (list.isEmpty) return Optional.empty();
+      else return Optional.of(list.get(list.size - 1))
+    }</code></pre>
+
+          Idris:
+          <pre><code>
+    lastOption : List a -> Maybe a
+    lastOption       []  = Nothing
+    lastOption (x :: []) = Just x
+    lastOption (x :: xs) = lastOption xs</code></pre>
+        </section>
+
 			<!--
 				<section>
 					<h1>Reveal.js</h1>
