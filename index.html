@@ -50,7 +50,7 @@
           <h3>Idris Syntax</h3>
 
           Java
-          <pre><code class="hljs">
+          <pre><code>
     static &lt;T> Optional&lt;T> lastOption(List&lt;T> list) {
       if (list.isEmpty) return Optional.empty();
       else return Optional.of(list.get(list.size() - 1))
@@ -58,7 +58,7 @@
           </code></pre>
 
           Idris
-          <pre><code class="hljs">
+          <pre><code>
     lastOption : List a -> Maybe a
     lastOption       []  = Nothing
     lastOption (x :: []) = Just x
