@@ -9,6 +9,7 @@
   * More precise types help you with the implementation
 * "make illegal states unrepresentable"
 * Type first development
+* Do not focus on safety. If we're using more types, the computer can do the boring work for us.
 
 Resources:
 
