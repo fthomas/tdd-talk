@@ -46,21 +46,23 @@
         </section>
         
         <section>
-          <h3></h3>
+          <h3>Idris Syntax</h3>
 
-          Java:
+          Java
           <pre><code>
     static <T> Optional<T> lastOption(List<T> list) {
       if (list.isEmpty) return Optional.empty();
       else return Optional.of(list.get(list.size - 1))
-    }</code></pre>
+    }
+          </code></pre>
 
-          Idris:
+          Idris
           <pre><code>
     lastOption : List a -> Maybe a
     lastOption       []  = Nothing
     lastOption (x :: []) = Just x
-    lastOption (x :: xs) = lastOption xs</code></pre>
+    lastOption (x :: xs) = lastOption xs
+          </code></pre>
         </section>
 
 			<!--
