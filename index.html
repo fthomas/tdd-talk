@@ -117,6 +117,12 @@
           generated from a correct source program. In other words, a buggy compiler can insert
           bugs in the programs that it compiles. This phenomenon is called miscompilation.
           
+            We created a tool that generates random C programs, and then spent two and a half
+            years using it to find compiler bugs. So far, we have reported more than 325
+            previously unknown bugs to compiler developers. Moreover, every compiler that we
+            tested has been found to crash and also to silently generate wrong code when
+            presented with valid inputs. (PLDI 2011)
+          
           For non-critical, "everyday" software, miscompilation is an annoyance but not a major
           issue: bugs introduced by the compiler are negligible compared to those already present
           in the source program. The situation changes dramatically, however, for safety-critical
