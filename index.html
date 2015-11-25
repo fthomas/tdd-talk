@@ -89,13 +89,36 @@
         </section>
         
         <section>
+          <h3>Bugs in Produktion können fatal sein</h3>
+          <img src="img/MCO.png" />
+        </section>
+        
+        <section>
           <h3>Microkernel</h3>
           <img src="img/seL4.png" />
+          <!--
+          * beweisbar keine Speicherfehler und Zeigerfehler
+          * 26 2/3 * mehr Beweiscode als Programmcode
+          -->
         </section>
         
         <section>
           <h3>Compiler</h3>
           <img src="img/CompCert.png" />
+          <!--
+          * Der erzeugte Maschinencode verhält sich exakt wie durch den Sourcecode vorgegeben
+          
+          http://compcert.inria.fr/motivations.html
+          Bugs in compilers do occur and can cause incorrect executable code to be silently
+          generated from a correct source program. In other words, a buggy compiler can insert
+          bugs in the programs that it compiles. This phenomenon is called miscompilation.
+          
+          For non-critical, "everyday" software, miscompilation is an annoyance but not a major
+          issue: bugs introduced by the compiler are negligible compared to those already present
+          in the source program. The situation changes dramatically, however, for safety-critical
+          or mission-critical software, where human lives, critical infrastructures, or
+          highly-sensitive information are at stake.
+          -->
         </section>
         
         <section>
