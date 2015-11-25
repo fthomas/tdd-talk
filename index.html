@@ -57,6 +57,7 @@
   
 * Tests beweisen Spezialfälle
 * Typen sind allgemeine Aussagen und Werte dieser Typen sind Beweise dieser Aussagen.
+* types and expressions are part of the same language, they use the same syntax
 -->
 
   <body>
@@ -108,8 +109,10 @@
           Java
           <pre><code>
     static &lt;T> Optional&lt;T> lastOption(List&lt;T> list) {
-      if (list.isEmpty) return Optional.empty();
-      else return Optional.of(list.get(list.size() - 1));
+      if (list.isEmpty)
+        return Optional.empty();
+      else
+        return Optional.of(list.get(list.size() - 1));
     }
           </code></pre>
 
@@ -121,19 +124,21 @@
     lastOption (x :: xs) = lastOption xs
           </code></pre>
         </section>
-        
-        <!--
-        Notes:
-         - types and expressions are part of the same language, they use the same syntax
-        -->
+      
+        <section>
+           <p>Idris: <a href="http://www.idris-lang.org/">http://www.idris-lang.org/</a></p>
+           <p>
+             <img src="img/MEAP.png" />
+             <a href="https://www.manning.com/books/type-driven-development-with-idris">Type-Driven Development with Idris</a>
+             <br />
+	           https://www.manning.com/books/type-driven-development-with-idris
+           </p>
+        </section>
         
         <section style="text-align: left;">
-	  <h1>THE END</h1>
-	  - Idris: <a href="http://www.idris-lang.org/">http://www.idris-lang.org/</a><br />
-	  - <a href="https://www.manning.com/books/type-driven-development-with-idris">Type-Driven Development with Idris</a>
-	    (https://www.manning.com/books/type-driven-development-with-idris)<br />
-	  - Slides: <a href="http://fthomas.github.io/tdd-talk/">http://fthomas.github.io/tdd-talk/</a><br />
-	  - Code: <a href="https://github.com/fthomas/tdd-talk">https://github.com/fthomas/tdd-talk</a>
+          <h1>THE END</h1>
+            - Slides: <a href="http://fthomas.github.io/tdd-talk/">http://fthomas.github.io/tdd-talk/</a><br />
+            - Code: <a href="https://github.com/fthomas/tdd-talk">https://github.com/fthomas/tdd-talk</a>
         </section>
 
       </div>
